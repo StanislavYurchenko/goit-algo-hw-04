@@ -1,6 +1,13 @@
 from pathlib import Path
 
 def total_salary(path):
+    '''
+        Reads a file containing employee names and their salaries, calculates the total salary and the average salary.
+
+        @param path: A string representing the file path to read.
+        @output: A tuple containing the total salary and the average salary.
+    '''
+    
     try:
         with open(path, 'r', encoding='utf-8') as file:
             total = 0
