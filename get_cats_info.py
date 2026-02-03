@@ -15,6 +15,7 @@ def get_cats_info(path):
                     continue
 
             return cats
+
     except FileNotFoundError:
         print(f"File {path} not found.")
         return []
