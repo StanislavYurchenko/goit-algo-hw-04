@@ -1,5 +1,5 @@
 
-# GOIT Algorithm Homework 04
+# GO-IT Python Homework 04
 
 ## Overview
 This project contains solutions for Algorithm Homework 04 from GoIT Python course.
