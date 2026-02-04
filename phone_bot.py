@@ -16,6 +16,7 @@ def get_saved_contacts(path = "data/contacts.txt"):
         pass
     return contacts
 
+
 def save_contacts(contacts, path = "data/contacts.txt"):
     with open(Path(path), "w") as file:
         for name, phone in contacts.items():
@@ -48,12 +49,14 @@ def parse_input(user_input):
     cmd = cmd.strip().lower()
     return cmd, *args
 
+
 def add_contact(args, contacts):
     name, phone = args
     if name in contacts:
         return "Contact already exists."
     contacts[name] = phone
     return "Contact added."
+    
 
 def main():
     print(Fore.GREEN + "Welcome to the assistant bot!")
@@ -82,4 +85,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
