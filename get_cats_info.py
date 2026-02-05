@@ -16,7 +16,7 @@ def get_cats_info(path):
                 id = parts[0].strip()
                 name = parts[1].strip()
                 try:
-                    age = int(parts[2].strip())
+                    age = parts[2].strip()
                     cats.append({'id': id, 'name': name, 'age': age})
                 except ValueError:
                     continue

@@ -21,7 +21,7 @@ def total_salary(path):
                 except ValueError:
                     continue
 
-                return (total, total / (line_count or 1))
+            return (total, total / (line_count or 1))
 
     except FileNotFoundError:
         print(f"File {path} not found.")
