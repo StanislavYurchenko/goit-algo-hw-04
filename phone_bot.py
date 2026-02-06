@@ -32,6 +32,7 @@ def add_contact(args, contacts):
 
 def main():
     print( "Welcome to the assistant bot!")
+    contacts = {}
 
     while True:
         user_input = input("Enter a command: ")
@@ -49,8 +50,7 @@ def main():
         elif command == "phone":
             print(show_phone(args, contacts))
         elif command == "all":
-                for name, phone in contacts.items():
-                    print(f"{name}: {phone}")
+            print(f"{contacts}")
         else:
             print("Invalid command.")
 
