@@ -28,6 +28,12 @@ def add_contact(args, contacts):
         return "Contact already exists."
     contacts[name] = phone
     return "Contact added."
+
+def get_all_contacts(contacts):
+    contacts_str = ""
+    for name, phone in contacts.items():
+        contacts_str += f"{name}: {phone}\n"
+    return contacts_str
     
 
 def main():
@@ -50,7 +56,7 @@ def main():
         elif command == "phone":
             print(show_phone(args, contacts))
         elif command == "all":
-            print(f"{contacts}")
+            print(get_all_contacts(contacts))
         else:
             print("Invalid command.")
 
